@@ -1,10 +1,13 @@
 cmake_minimum_required(VERSION 3.10)
 project(GraphEngine)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(glfw3 3.3 REQUIRED)
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()
+
+include_directories(${CONAN_INCLUDE_DIRS_NLOHMANN_JSON})
 
 add_executable(
     GraphEngine
@@ -20,6 +23,9 @@ add_executable(
     src/model/components/map.cc
     src/model/components/render.h
     src/model/components/render.cc
+
+    src/model/utils/save.h
+    src/model/utils/save.cc
 )
 
 include_directories(
