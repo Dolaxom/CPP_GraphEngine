@@ -17,8 +17,8 @@ add_executable(
     src/view/window.h
 
     src/model/structs.h
-    src/model/model.h
-    src/model/model.cc
+    src/model/engine.h
+    src/model/engine.cc
     src/model/components/map.h
     src/model/components/map.cc
     src/model/components/render.h

@@ -1,7 +1,7 @@
 #pragma once
 
 #include <GLFW/glfw3.h>
-#include "model/model.h"
+#include "model/engine.h"
 
 namespace ge {
 
@@ -14,9 +14,6 @@ class Window {
  private:
   GLFWwindow *window_;
   Engine engine;
-
-  float cameraX_ = 0.0f;
-  float cameraY_ = 0.0f;
 
   void SetProjection(int width, int height) const;
   void InitFrame(GLFWwindow *window, int &width, int &height) const;
