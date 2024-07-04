@@ -16,15 +16,15 @@ void Map::AddRelation(size_t source, size_t destination) {
   relations_.push_back({source, destination});
 }
 
-size_t Map::PointsCount() {
+size_t Map::PointsCount() const {
   return points_.size();
 }
 
-size_t Map::RelationsCount() {
+size_t Map::RelationsCount() const {
   return relations_.size();
 }
 
-Point Map::GetPoint(size_t point_id) {
+Point Map::GetPoint(size_t point_id) const {
   if (point_id >= points_.size()) {
     throw std::runtime_error("Invalid point index");
   }
@@ -32,7 +32,7 @@ Point Map::GetPoint(size_t point_id) {
   return points_[point_id];
 }
 
-Relation Map::GetRelation(size_t relation_id) {
+Relation Map::GetRelation(size_t relation_id) const {
   if (relation_id >= relations_.size()) {
     throw std::runtime_error("Invalid relation index");
   }

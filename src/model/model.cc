@@ -1,4 +1,5 @@
 #include "model.h"
+#include "model/utils/save.h"
 
 namespace ge {
 
@@ -50,6 +51,10 @@ Engine::Engine() : render_{map_} {
   map_.AddRelation(5, 15);
   map_.AddRelation(15, 17);
   map_.AddRelation(15, 16);
+}
+
+Engine::~Engine() {
+  Save::SaveMapToFile(map_);
 }
 
 } // namespace ge

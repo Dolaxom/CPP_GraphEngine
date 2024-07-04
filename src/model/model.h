@@ -10,6 +10,7 @@ namespace ge
 class Engine {
 public:
   Engine();
+  ~Engine();
   Map map_;
   Render render_;
 private:

@@ -15,10 +15,10 @@ public:
   void AddPoint(float64 x, float64 y);
   void AddRelation(size_t source, size_t destination);
 
-  size_t PointsCount();
-  size_t RelationsCount();
-  Point GetPoint(size_t point_id);
-  Relation GetRelation(size_t relation_id);
+  size_t PointsCount() const;
+  size_t RelationsCount() const;
+  Point GetPoint(size_t point_id) const;
+  Relation GetRelation(size_t relation_id) const;
 
 private:
   vector<Point> points_;
