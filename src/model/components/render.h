@@ -3,6 +3,7 @@
 #include <vector>
 #include "model/components/map.h"
 #include "model/structs.h"
+#include "subcomponents/grid.h"
 
 namespace ge
 {
@@ -15,6 +16,7 @@ public:
 
 private:
   Map& map_;
+  Grid grid_;
 };
 
 } // namespace ge

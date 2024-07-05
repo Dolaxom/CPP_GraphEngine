@@ -23,6 +23,8 @@ add_executable(
     src/model/components/map.cc
     src/model/components/render.h
     src/model/components/render.cc
+    
+    src/model/components/subcomponents/grid.h
 
     src/model/utils/save.h
     src/model/utils/save.cc
