@@ -40,7 +40,6 @@ void Window::DestroyAll() {
 }
 
 void Window::Draw() {
-  glPointSize(8);
   engine.render_.Draw();
   glfwSwapBuffers(window_);
   glfwPollEvents();

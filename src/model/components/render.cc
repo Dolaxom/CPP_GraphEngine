@@ -8,6 +8,8 @@ namespace ge
 Render::Render(Map& map) : map_{map}, grid_{100, 100} { }
 
 void Render::Draw() {
+  glPointSize(8);
+
   grid_.Draw();
 
   size_t relations_count = map_.RelationsCount();
