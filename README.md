@@ -2,4 +2,4 @@
 
 OpenGL + glfw3 + ImGui
 
-![image](https://github.com/Dolaxom/CPP_GraphEngine/assets/51160711/972f97f7-1e59-4a39-b143-449c84ac2006)
+![image](https://github.com/Dolaxom/CPP_GraphEngine/assets/51160711/8d3ccfd2-2a5e-4cf4-9024-5ab46d269201)
