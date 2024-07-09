@@ -40,7 +40,7 @@ void Window::DestroyAll() {
 }
 
 void Window::Draw() {
-  engine.render_.Draw();
+  engine.GetRender().Draw();
   glfwSwapBuffers(window_);
   glfwPollEvents();
 }
