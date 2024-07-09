@@ -3,6 +3,7 @@
 #include <vector>
 #include "components/map.h"
 #include "components/render.h"
+#include "model/math/graph.h"
 
 namespace ge
 {
@@ -23,6 +24,7 @@ public:
 private:
   Map map_;
   Render render_;
+  Graph graph_;
 };
 
 } // namespace ge

@@ -26,8 +26,11 @@ add_executable(
     
     src/model/components/subcomponents/grid.h
 
-    src/model/utils/save.h
     src/model/utils/save.cc
+    src/model/utils/save.h
+
+    src/model/math/graph.cc
+    src/model/math/graph.h
 )
 
 include_directories(
